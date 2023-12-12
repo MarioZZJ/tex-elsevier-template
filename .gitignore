@@ -1,0 +1,4 @@
+# ignore original bibtex output by zotero
+Tex/*
+# ignore outputfile
+out/*

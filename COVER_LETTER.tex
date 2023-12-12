@@ -1,0 +1,127 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% source: https://www.overleaf.com/latex/templates/nju-cover-letter-template-nan-da-tou-gao-xin-mo-ban/tkdpzmwxvksw
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS 文档基础配置
+%----------------------------------------------------------------------------------------
+
+\documentclass{article}
+
+\usepackage{charter} % Use the Charter font
+
+\usepackage[
+	a4paper, % Paper size
+	top=1in, % Top margin
+	bottom=1in, % Bottom margin
+	left=1in, % Left margin
+	right=1in, % Right margin
+	%showframe % Uncomment to show frames around the margins for debugging purposes
+]{geometry}
+
+\setlength{\parindent}{0pt} % Paragraph indentation
+\setlength{\parskip}{1em} % Vertical space between paragraphs
+
+\usepackage{graphicx} % Required for including images
+
+\usepackage{fancyhdr} % Required for customizing headers and footers
+
+\fancypagestyle{firstpage}{%
+	\fancyhf{} % Clear default headers/footers
+	\renewcommand{\headrulewidth}{0pt} % No header rule
+	\renewcommand{\footrulewidth}{1pt} % Footer rule thickness
+}
+
+\fancypagestyle{subsequentpages}{%
+	\fancyhf{} % Clear default headers/footers
+	\renewcommand{\headrulewidth}{1pt} % Header rule thickness
+	\renewcommand{\footrulewidth}{1pt} % Footer rule thickness
+}
+
+\AtBeginDocument{\thispagestyle{firstpage}} % Use the first page headers/footers style on the first page
+\pagestyle{subsequentpages} % Use the subsequent pages headers/footers style on subsequent pages
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	FIRST PAGE HEADER
+%----------------------------------------------------------------------------------------
+
+\includegraphics[width=0.35\textwidth]{njulogo} % Logo
+
+\vspace{-1em} % Pull the rule closer to the logo
+
+\rule{\linewidth}{1pt} % Horizontal rule
+
+% \bigskip\bigskip % Vertical whitespace
+
+%----------------------------------------------------------------------------------------
+%	YOUR NAME AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\hfill
+\begin{tabular}{l @{}}
+\hfill \today \bigskip\\ % Date
+% \hfill Corresponding Author \\
+% \hfill Email: corr@gmail.com \\
+% \hfill 888 Which Avenue, Whichever District,\\
+% \hfill Nanking, Johnsue Province, 990023, China\\ % Address
+\end{tabular}
+
+\bigskip % Vertical whitespace
+
+%----------------------------------------------------------------------------------------
+%	ADDRESSEE AND GREETING
+%----------------------------------------------------------------------------------------
+
+% \begin{tabular}{@{} l}
+% 	Prof.\ Whoever, Editor \\
+% 	Editor-in-chief \\
+% 	\textit{Journal of Latex}
+% \end{tabular}
+
+% \begin{tabular}{@{} l}
+% 	Dr.\ Whoever, Associate Editor \\
+% 	Associate Editor \\
+% 	\textit{Journal of Latex}
+% \end{tabular}
+
+\bigskip % Vertical whitespace
+
+Dear Prof.\ Whoever and guest editors,
+
+\bigskip % Vertical whitespace
+
+%----------------------------------------------------------------------------------------
+%	LETTER CONTENT
+%----------------------------------------------------------------------------------------
+
+On behalf of all authors, I am pleased to resubmit our manuscript “LaTeX is awesome” for consideration for publication in the \textit{Journal of LaTeX}.
+In response to the editor's concern regarding the word limit for our manuscript, we have carefully summarized and condensed its contents to enhance conciseness for the purpose of review and eventual publication.
+
+All authors have read, seen, and agreed to the revised version of the paper, and wish to be considered for publication in the \textit{Journal of LaTeX}.
+This manuscript is original, and it has been neither published elsewhere nor submitted for publication simultaneously.
+We have no conflicts of interest to disclose.
+ 
+Last but not least, I would like to deeply appreciate your work as editor-in-chief of JOL.
+If you have any queries, please don’t hesitate to contact me at the address below.
+
+\bigskip % Vertical whitespace
+
+Thank you and best regards.\\
+Sincerely yours,
+
+% \vspace{20pt} % Vertical whitespace
+
+Corresponding Author\\
+
+
+\hfill
+\begin{tabular}{l @{}}
+\hfill School of LaTeX, Nankingwhich University\\
+\hfill 888 Which Avenue, Whichever District, Nanking, Johnsue Province, 990023, China \\ % Address
+\hfill Email: corr@gmail.com
+\end{tabular}
+\end{document}
