@@ -10,4 +10,10 @@ Git repo for the LaTeX elsevier template, together with cover letter and respons
 * click 'use this template' to create repo based on this one.
 * write your paper in `MANUSCRIPT.tex` and modify other related files.
 * compile the local file with `latex` or `pdflatex`.
-* git push with a tag will trigger github action to compile `AUTHOR_STATEMENT.tex`, `COVER_LETTER.tex`, `MANUSCRIPT.tex` and `RESPONSE_LETTER.tex` to pdf and attach these pdfs to a new release.
+* git push with a tag will trigger github action to compile `AUTHOR_STATEMENT.tex`, `COVER_LETTER.tex`, `MANUSCRIPT.tex` and `RESPONSE_LETTER.tex` to pdf and attach these pdfs to a new release. Example:
+```bash
+git commit -m "add release with a tag"
+git tag -a v1.0.23.12.13 -m "tag info"
+git push origin master
+git push origin v1.0.23.12.13
+```
