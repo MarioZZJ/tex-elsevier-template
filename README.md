@@ -17,3 +17,4 @@ git tag -a v1.0.23.12.13 -m "tag info"
 git push origin master
 git push origin v1.0.23.12.13
 ```
+Note that the read/write permission of workflow shoule be enabled first. Set this in Repository Settings -> Actions -> General -> Workflow Permissions. You should see the generated PDF in the release page.
